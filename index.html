@@ -3,13 +3,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 </head>
 <body>  
-<h1>
-    <a href="" class="typewrite" data-period="2000" data-type="hello, i'm leniece. i go by these pronouns, she/her. i'm a programming student">
-      <span class="wrap"></span>
-    </a>
-  </h1>
+    <h1 class="type-it">Leniece's website</h1>
+    <script>
+        jQuery(document).ready(function($){
+            $('.type-it').typeIt({
+                content: "Hello, I'm leniece ! I'm a programming student apiring to be a full-time software developer."
+            });
+        });
+    </script>
 </body>
 </html>
